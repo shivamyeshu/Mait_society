@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-export default function SponsorPage() {
+export default function StudentRegistrationPage() {
   return (
     <section
-      id="sponsor"
+      id="Register"
       className="min-h-screen py-24 bg-background text-foreground flex items-center justify-center"
     >
       <motion.div
@@ -15,12 +15,12 @@ export default function SponsorPage() {
         transition={{ duration: 0.6 }}
         className="w-full max-w-3xl text-center border rounded-2xl shadow-xl p-10 bg-muted/30"
       >
-        <h1 className="text-4xl font-bold mb-4">For Sponsor's/ Partner's With ElevatHub</h1>
-        <p className="text-muted-foreground text-lg mb-8">
-          We're looking to collaborate with organizations and companies who believe in empowering students through tech, innovation, and growth.
+        <h1 className="text-4xl font-bold mb-4">For Students Join ElevatHub Today</h1>
+        <p className="text-muted-foreground text-base mb-8">
+          Are you passionate about technology, innovation, and career development? Join ElevatHub to access resources, networking opportunities, and skill-building activities. Be part of a vibrant community dedicated to your success.
         </p>
         <p className="text-muted-foreground mb-6">
-          If you're interested in sponsoring our events or collaborating with us, fill out the form and we'll reach out to you soon.
+          Fill out the form below to join the society and start your journey with us. We'll reach out to you soon!
         </p>
         <Button asChild>
           <a
@@ -29,7 +29,7 @@ export default function SponsorPage() {
             rel="noopener noreferrer"
             className="text-base"
           >
-            Sponsor us 
+            Register via Google Form (for Students)
           </a>
         </Button>
       </motion.div>

@@ -8,7 +8,7 @@ import { Menu, Moon, Sun, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/lib/animations";
 
-const navItems = ["About", "Events", "Team", "Sponsor", "Join"];
+const navItems = ["About", "Events", "Team",  "Register" ,"Sponsor",];
 
 export default function Header() {
   const [mounted, setMounted] = useState(false);
@@ -21,6 +21,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-background/80 border-b">
       <div className="container flex h-16 items-center justify-between">
+        {/* Logo and Branding */}
         <Link href="/" className="flex items-center">
           <Image
             src="/images/logo.png"

@@ -32,7 +32,7 @@ export default function EventsPage() {
   return (
     <section id="events" className="py-20 bg-muted/50" style={{ backgroundColor: 'var(--secondary-bg-color)', color: 'var(--secondary-text-color)' }}>
   <h2 className="text-3xl font-bold mb-4 text-center" style={{ color: 'var(--primary-text-color)' }}>Upcomming Events</h2>
-  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 ml-7 ">
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 ml-7 mr-7">
     {events.map((event) => (
       <motion.div
         key={event.id}
