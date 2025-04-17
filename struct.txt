@@ -3,7 +3,7 @@ Structure:
     - Header.tsx
     - Hero.tsx
     - About.tsx
-    - Projects.tsx
+    - Projects.tsx = event.tsx both are same 
     - Team.tsx
     - Footer.tsx
 - lib/
