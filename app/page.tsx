@@ -6,7 +6,7 @@ import Team from "@/components/Team"
 import EventsPage from "@/components/EventsPage"
 import ContactSponsorPage from "@/components/SponsorPage"
 import StudentRegistrationPage from "@/components/StudentRegistrationPage";
-// import Footer from "@/components/Footer"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -19,9 +19,7 @@ export default function Home() {
       <Team />
       < StudentRegistrationPage />
       < ContactSponsorPage/>
-    
-      {/* <Footer/> */}
-
+      <Footer/>
     </>
   )
 }

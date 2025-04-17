@@ -120,7 +120,7 @@ export default function Header() {
 
       {isScrolled && (
         <button
-          className="fixed bottom-9 left-6 p-0.5  rounded-t-3xl  bg-primary text-gray-400"
+          className="fixed bottom-9 right-12  p-0.5  rounded-t-3xl  bg-primary text-gray-400"
           onClick={() => window.scrollTo(0, 0)}
         >
           ↑
