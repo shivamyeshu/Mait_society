@@ -1,27 +1,26 @@
-"use client"
-import { useState, useEffect } from "react"
-import { useTheme } from "next-themes"
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Menu, Moon, Sun, X } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
-import { fadeIn, staggerContainer } from "@/lib/animations"
+"use client";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Menu, Moon, Sun, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/lib/animations";
 
-const navItems = ["About", "Events", "Team", "Join"]
+const navItems = ["About", "Events", "Team", "Sponsor", "Join"];
 
 export default function Header() {
-  const [mounted, setMounted] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
 
-  useEffect(() => setMounted(true), [])
-  if (!mounted) return null
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
 
   return (
     <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-background/80 border-b">
       <div className="container flex h-16 items-center justify-between">
-        {/* Logo and Branding */}
         <Link href="/" className="flex items-center">
           <Image
             src="/images/logo.png"
@@ -38,7 +37,10 @@ export default function Header() {
           <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="flex gap-6">
             {navItems.map((item, i) => (
               <motion.div key={i} variants={fadeIn}>
-                <Link href={`#${item.toLowerCase()}`} className="text-sm font-medium hover:text-primary">
+                <Link
+                  href={`#${item.toLowerCase()}`}
+                  className="text-sm font-medium hover:text-primary"
+                >
                   {item}
                 </Link>
               </motion.div>
@@ -89,5 +91,5 @@ export default function Header() {
         )}
       </AnimatePresence>
     </header>
-  )
+  );
 }

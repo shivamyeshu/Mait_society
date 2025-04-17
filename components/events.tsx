@@ -18,6 +18,7 @@ const events = [
     tags: ["IoT", "Green Tech"],
     image: "/placeholder.svg",
   },
+  // add more event in the same format 
 ]
 
 export default function Events() {
