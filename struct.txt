@@ -1,0 +1,17 @@
+Structure:
+- components/
+    - Header.tsx
+    - Hero.tsx
+    - About.tsx
+    - Projects.tsx
+    - Team.tsx
+    - Footer.tsx
+- lib/
+    - animations.ts
+    - siteConfig.ts
+- app/
+    - page.tsx
+
+lib/animations.ts
+
+enahaced by shivamyeshu
