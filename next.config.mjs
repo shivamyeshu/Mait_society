@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    AUTHOR_NAME: "Shivam Yeshu", 
+  },
 }
 
 export default nextConfig

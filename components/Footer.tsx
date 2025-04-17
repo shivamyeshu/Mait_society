@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
+  const n = String.fromCharCode(...[83, 104, 105, 118, 97, 109, 32, 89, 101, 115, 104, 117]);
   return (
     <footer className="border-t py-12 bg-background">
     <div className="container">
@@ -100,7 +101,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="font-medium text-purple-500 dark:text-purple-400 underline underline-offset-4 hover:text-purple-600 dark:hover:text-purple-300"
             >
-              Shivam Kumar
+               Shivam Yeshu
             </a>
           </p>
         </div>
