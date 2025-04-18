@@ -3,6 +3,7 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import type { Metadata } from "next"
 import { Space_Grotesk, Inter } from "next/font/google"
+import Head from "next/head"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -15,9 +16,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "NEXUS Tech Society",
-  description: "College technical society website with a modern, sleek, and futuristic design",
-    generator: 'shivam'
+  title: "ElevatHub",
+  description: "Society for Enhancing Skills for Placements and Internships",
+  generator: 'shivamyeshu'
 }
 
 export default function RootLayout({
@@ -27,6 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/images/logo.png" />
+      </head>
       <body className={`${spaceGrotesk.variable} ${inter.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange={false}>
           {children}
@@ -35,6 +39,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-import './globals.css'
