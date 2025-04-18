@@ -2,7 +2,7 @@
   "name": "shivam",
   "version": "0.1.0",
   "private": true,
-  "author": "Shivam Yeshu",
+  "author": " Yeshu",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
