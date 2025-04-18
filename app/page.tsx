@@ -9,6 +9,13 @@ import StudentRegistrationPage from "@/components/StudentRegistrationPage";
 import Footer from "@/components/Footer"
 
 export default function Home() {
+  if (typeof window !== "undefined") {
+  console.log(
+    "%cDeveloped by Shivam Kumar \n%chttps://github.com/shivamyeshu \n%chttps://www.linkedin.com/in/shivam-yeshu/",
+    "color: #fff; background: #111; font-size: 16px; padding: 8px; font-weight: bold;",
+    "color: #007acc; font-size: 14px;"
+  );
+}
   return (
     <>
       <Header />
