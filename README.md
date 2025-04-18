@@ -21,11 +21,6 @@ Welcome to **ElevatHub**, a student-led initiative dedicated to equipping aspiri
 
 [ Visit ElevatHub](https://elevathub.vercel.app)
 
----
-
-##  Sneak Peek
-
-![ElevatHub Preview](./public/banner.png)
 
 ---
 
