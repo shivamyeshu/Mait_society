@@ -15,7 +15,7 @@ export default function StudentRegistrationPage() {
         transition={{ duration: 0.6 }}
         className="w-full max-w-3xl text-center border rounded-2xl shadow-xl p-10 bg-muted/30"
       >
-        <h1 className="text-4xl font-bold mb-4">For Students Join ElevatHub Today</h1>
+        <h1 className="text-4xl font-bold mb-4"> Fill the registriation form as a student to Join ElevatHub Today</h1>
         <p className="text-muted-foreground text-base mb-8">
           Are you passionate about technology, innovation, and career development? Join ElevatHub to access resources, networking opportunities, and skill-building activities. Be part of a vibrant community dedicated to your success.
         </p>

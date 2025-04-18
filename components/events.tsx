@@ -6,19 +6,26 @@ import { Card } from "@/components/ui/card"
 import Image from "next/image"
 
 const events = [
+    // add more event in the same format 
+
+  {
+    title: "Session on Mobile development + DSA ",
+    description: ` hosted two impactful sessions—
+ Mobile Development 101 with Vishwas Sharma
+ Gave students a solid foundation in mobile app dev &&
+ Masterclass on Binary Search with Samrat Bhardwaj
+ Simplified one of the trickiest algorithms, 
+ helping attendees strengthen their DSA fundamentals — no prior knowledge required!
+`,
+    tags: ["Mobile development", "DSA"],
+    image: "/events/session1.png",},
   {
     title: "ElevatHub Orientation: A New Beginning!",
-    description: "Our orientation session was a great success! 🎉 From insightful discussions to interactive sessions, we introduced our mission of empowering students with career guidance, skill development, and placement preparation.",
-    tags: ["AI", "Education"],
-    image: "/placeholder.svg",
+    description: "Our orientation session was a great success! From insightful discussions to interactive sessions, we introduced our mission of empowering students with career guidance, skill development, and placement preparation.",
+    tags: ["Orientation session ", "Education", "IT"] ,
+    image: "/events/orientation.png",
   },
-  {
-    title: "Smart Campus",
-    description: "Optimizes energy usage with IoT.",
-    tags: ["IoT", "Green Tech"],
-    image: "/placeholder.svg",
-  },
-  // add more event in the same format 
+
 ]
 
 export default function Events() {

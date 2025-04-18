@@ -7,9 +7,9 @@ import Image from "next/image"
 import { use } from "react"
 
 const team = [
-  { name: "Alex Chen", role: "President", image: "/placeholder.svg" },
-  { name: "Maya Patel", role: "Vice President", image: "/placeholder.svg" },
-  { name: "Jordan Lee", role: "Tech Lead", image: "/placeholder.svg" },
+  { name: "lets see", role: "President", image: "/placeholder.svg" },
+  { name: "lets see", role: "Vice President", image: "/placeholder.svg" },
+  { name: "lets see", role: "Tech Lead", image: "/placeholder.svg" },
 ]
 
 export default function Team() {

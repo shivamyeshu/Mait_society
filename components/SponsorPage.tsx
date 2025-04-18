@@ -15,12 +15,12 @@ export default function SponsorPage() {
         transition={{ duration: 0.6 }}
         className="w-full max-w-3xl text-center border rounded-2xl shadow-xl p-10 bg-muted/30"
       >
-        <h1 className="text-4xl font-bold mb-4">For Sponsor's/ Partner's With ElevatHub</h1>
+        <h1 className="text-4xl font-bold mb-4">Partner with ElevatHub</h1>
         <p className="text-muted-foreground text-lg mb-8">
-          We're looking to collaborate with organizations and companies who believe in empowering students through tech, innovation, and growth.
+        ElevatHub is seeking collaborations with organizations and companies committed to empowering students through technology, innovation, and growth.
         </p>
         <p className="text-muted-foreground mb-6">
-          If you're interested in sponsoring our events or collaborating with us, fill out the form and we'll reach out to you soon.
+        If you're interested in sponsoring our events or partnering with us, please fill out the form below, and we'll get in touch with you soon.
         </p>
         <Button asChild>
           <a

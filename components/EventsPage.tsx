@@ -8,24 +8,25 @@ import { fadeIn, staggerContainer } from "@/lib/animations";
 const events = [
   {
     id: 1,
-    title: "Industry Connect Webinar",
-    date: "May 10, 2025",
-    time: "3:00 PM – 5:00 PM",
-    location: "Online (Zoom)",
+    title: "event name will be disclose soon please wait ...",
+    date: "date",
+    time: "time ",
+    location: "location ",
     description:
-      "Join us for an insightful webinar with industry professionals from top tech companies. Learn about the latest trends in the IT sector and gain valuable tips on career progression and skill development.",
-    registrationLink: "#",
-  },
+      "description: ",
+    registrationLink: "registration link",
+  },  
   {
-    id: 2,
-    title: "Mock Interview Sessions",
-    date: "May 15, 2025",
-    time: "10:00 AM – 4:00 PM",
-    location: "MAIT Campus (Room 203, Building B)",
+    id:2,
+    title: "event name will be disclose soon please wait ...",
+    date: "date",
+    time: "time ",
+    location: "location ",
     description:
-      "ElevatHub is hosting mock interview sessions with industry experts to help students gain real-world interview experience. Get personalized feedback to boost your confidence and prepare for placements.",
-    registrationLink: "#",
+      "description: ",
+    registrationLink: "registration link",
   },
+
 ];
 
 export default function EventsPage() {

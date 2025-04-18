@@ -54,23 +54,23 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
-                Projects
-              </Link>
-            </li>
-            <li>
               <Link href="#events" className="text-muted-foreground hover:text-foreground transition-colors">
                 Events
               </Link>
             </li>
             <li>
               <Link href="#team" className="text-muted-foreground hover:text-foreground transition-colors">
-                Team
+                Our Team
               </Link>
             </li>
             <li>
-              <Link href="#join" className="text-muted-foreground hover:text-foreground transition-colors">
-                Join Us
+              <Link href="Register" className="text-muted-foreground hover:text-foreground transition-colors">
+                for Students
+              </Link>
+            </li>
+            <li>
+              <Link href="sponsor" className="text-muted-foreground hover:text-foreground transition-colors">
+                for Sponsor
               </Link>
             </li>
           </ul>
@@ -80,9 +80,10 @@ export default function Footer() {
         <div>
           <h3 className="font-bold mb-4">Contact</h3>
           <ul className="space-y-2">
-            <li className="text-muted-foreground">Email: mait.ac.in</li>
-            <li className="text-muted-foreground">Phone: (123) 456-7890</li>
-            <li className="text-muted-foreground">Address:</li>
+            <li className="text-muted-foreground">Email: mait@mait.ac.in</li>
+            <li className="text-muted-foreground">Phone: (+91) 456-7890</li>
+            <li className="text-muted-foreground">Address: 	
+              Maharaja Agrasen Institute of Technology, Sector-22, Rohini, Delhi-110086, INDIA</li>
           </ul>
         </div>
       </div>
@@ -94,14 +95,14 @@ export default function Footer() {
             © {new Date().getFullYear()} All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Created by : {" "}
+           Designed & Created by - {" "}
             <a
               href="https://www.linkedin.com/in/shivam-yeshu"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-purple-500 dark:text-purple-400 underline underline-offset-4 hover:text-purple-600 dark:hover:text-purple-300"
             >
-               
+               Shivam Yeshu
             </a>
           </p>
         </div>
