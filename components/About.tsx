@@ -48,7 +48,7 @@ export default function About() {
             <img
               src="/images/extra.png"
               alt="ElevatHub Visual"
-              className="relative z-10 object-cover w-full h-[420px] md:h-[500px] transition-all duration-300 ease-in-out"
+              className="relative z-10 object-cover w-full h-[200px] md:h-[400px] transition-all duration-300 ease-in-out"
             />
           </div>
         </motion.div>
