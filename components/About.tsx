@@ -5,7 +5,7 @@ import { fadeIn, staggerContainer } from "@/lib/animations";
 
 export default function About() {
   return (
-    <section id="about" className="relative py-28 bg-background overflow-hidden">
+    <section id="about" className="relative py-28 bg-muted/10">
       {/* Soft gradient background glow */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-blue-500/5 pointer-events-none" />
 
@@ -34,7 +34,7 @@ export default function About() {
             Whether you're preparing for your first internship or final placements — we’re your launchpad.
           </p>
           <p className="text-lg text-gray-800 dark:text-zinc-100 font-semibold">
-            Join us. Learn. Adapt. <span className="text-purple-500">Elevate.</span>
+            Join us. Learn. Adapt. <span className="text-purple-500 dark:text-blue-400">Elevate Hub.</span>
           </p>
         </motion.div>
 

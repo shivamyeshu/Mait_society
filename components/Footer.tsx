@@ -64,12 +64,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="Register" className="text-muted-foreground hover:text-foreground transition-colors">
-                for Students
-              </Link>
-            </li>
-            <li>
-              <Link href="sponsor" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#sponsor" className="text-muted-foreground hover:text-foreground transition-colors">
                 for Sponsor
               </Link>
             </li>

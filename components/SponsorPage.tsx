@@ -7,7 +7,7 @@ export default function SponsorPage() {
   return (
     <section
       id="sponsor"
-      className="py-24  flex items-center justify-center bg-muted/10"
+      className="py-24  flex items-center justify-center bg-muted/5"
     >
       <motion.div
         initial={{ opacity: 0, y: 40 }}

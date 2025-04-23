@@ -1,40 +1,63 @@
-"use client"
+'use client';
+import React from 'react';
+import { team } from '@/components/Detail/team';
 
-import { motion } from "framer-motion"
-import { fadeIn, staggerContainer } from "@/lib/animations"
-import { Card } from "@/components/ui/card"
-import Image from "next/image"
-import { use } from "react"
+const extractGitHubUsername = (url: string) => {
+  const match = url.match(/github\.com\/([^/]+)/);
+  return match ? match[1] : '';
+};
 
-const team = [
-  { name: "lets see", role: "President", image: "/placeholder.svg" },
-  { name: "lets see", role: "Vice President", image: "/placeholder.svg" },
-  { name: "lets see", role: "Tech Lead", image: "/placeholder.svg" },
-]
+export default function TeamPage() {
+  const top3 = team.slice(0, 3);
+  const rest = team.slice(3);
 
-export default function Team() {
   return (
-    <section id="team" className="py-20 bg-muted/20">
-      <div className="container">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-          <h2 className="text-3xl font-bold mb-4 text-center">Meet the Team</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-10">
-            {team.map((member, i) => (
-              <motion.div key={i} variants={fadeIn}>
-                <Card className="overflow-hidden text-center">
-                  <div className="relative h-48">
-                    <Image src={member.image} alt={member.name} fill className="object-cover" />
+    <main className="bg-muted/10 text-gray-900 dark:text-white px-4 py-10 ">
+      <section className="max-w-6xl mx-auto space-y-12">
+        <h1 className="text-4xl font-bold text-center">Meet Our Team</h1>
+
+        {/* Top 3 - Big Box Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {top3.map((member) => {
+            const username = extractGitHubUsername(member.github);
+            const avatar = `https://github.com/${username}.png`;
+
+            return (
+              <div key={member.name} className="bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-md text-center">
+                <img src={avatar} alt={member.name} className="w-24 h-24 mx-auto rounded-full border-4 border-gray-300 dark:border-zinc-600 object-cover mb-4" />
+                <h2 className="text-xl font-semibold">{member.name}</h2>
+                <p className="text-sm text-gray-600 dark:text-gray-400">{member.designation}</p>
+                <div className="flex justify-center gap-4 mt-3 text-sm">
+                  <a href={member.github} target="_blank" className="text-blue-600 dark:text-blue-400 hover:underline">GitHub</a>
+                  <a href={member.linkedin} target="_blank" className="text-blue-600 dark:text-blue-400 hover:underline">LinkedIn</a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Remaining Members - 4 in a Row, Image Left, Flex Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {rest.map((member) => {
+            const username = extractGitHubUsername(member.github);
+            const avatar = `https://github.com/${username}.png`;
+
+            return (
+              <div key={member.name} className="bg-white dark:bg-zinc-800 p-4 rounded-2xl shadow flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                <img src={avatar} alt={member.name} className="w-16 h-16 rounded-full object-cover border-2 border-gray-300 dark:border-zinc-600" />
+                <div className="text-center sm:text-left">
+                  <h3 className="font-medium">{member.name}</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">{member.designation}</p>
+                  <div className="flex gap-2 justify-center sm:justify-start mt-1 text-sm">
+                    <a href={member.github} target="_blank" className="text-blue-600 dark:text-blue-400 hover:underline">GitHub</a>
+                    <a href={member.linkedin} target="_blank" className="text-blue-600 dark:text-blue-400 hover:underline">LinkedIn</a>
                   </div>
-                  <div className="p-4">
-                    <h3 className="font-bold">{member.name}</h3>
-                    <p className="text-sm text-muted-foreground">{member.role}</p>
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </div>
-    </section>
-  )
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    </main>
+  );
 }
