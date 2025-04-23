@@ -41,7 +41,6 @@ export default function About() {
         {/* Image Content */}
         <motion.div
           variants={fadeIn}
-          whileHover={{ scale: 1.03 }}
           transition={{ type: "spring", stiffness: 120 }}
         >
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 dark:border-white/10 backdrop-blur-md bg-white/10 dark:bg-white/5">

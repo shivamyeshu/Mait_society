@@ -76,7 +76,7 @@ export default function Footer() {
           <h3 className="font-bold mb-4">Contact</h3>
           <ul className="space-y-2">
             <li className="text-muted-foreground">Email: mait@mait.ac.in</li>
-            <li className="text-muted-foreground">Phone: (+91) 456-7890</li>
+            <li className="text-muted-foreground">Phone: (+91) 88517 49084</li>
             <li className="text-muted-foreground">Address: 	
               Maharaja Agrasen Institute of Technology, Sector-22, Rohini, Delhi-110086, INDIA</li>
           </ul>
@@ -97,7 +97,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="font-medium text-purple-500 dark:text-purple-400 underline underline-offset-4 hover:text-purple-600 dark:hover:text-purple-300"
             >
-               Shivam Yeshu
+               Shivam Yesh
             </a>
           </p>
         </div>
