@@ -15,3 +15,8 @@ Structure:
 lib/animations.ts
 
 enahaced by shivamyeshu
+
+do extra chages in 
+ > components/Detail/{NEEDED}.ts 
+
+btw made by shivam.

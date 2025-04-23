@@ -97,7 +97,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="font-medium text-purple-500 dark:text-purple-400 underline underline-offset-4 hover:text-purple-600 dark:hover:text-purple-300"
             >
-               Shivam Yesh
+               Shivam Yeshu
             </a>
           </p>
         </div>
