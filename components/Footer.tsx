@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Footer() {
   const n = String.fromCharCode(...[83, 104, 105, 118, 97, 109, 32, 89, 101, 115, 104, 117]);
   return (
-    <footer className="border-t py-12 bg-background">
+    <footer className="border-t py-12 ">
     <div className="container">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo & Description */}

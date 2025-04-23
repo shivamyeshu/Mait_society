@@ -7,7 +7,7 @@ export default function StudentRegistrationPage() {
   return (
     <section
       id="Register"
-      className="min-h-screen py-24 bg-background text-foreground flex items-center justify-center"
+      className="min-h-screen py-24  flex items-center justify-center"
     >
       <motion.div
         initial={{ opacity: 0, y: 40 }}

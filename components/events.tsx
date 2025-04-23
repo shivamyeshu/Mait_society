@@ -30,7 +30,7 @@ const events = [
 
 export default function Events() {
   return (
-    <section id="events" className="py-20 bg-muted/50">
+    <section id="events" className="py-20 bg-muted/10">
       <div className="container">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
           <h2 className="text-3xl font-bold mb-4 text-center">Featured Events</h2>

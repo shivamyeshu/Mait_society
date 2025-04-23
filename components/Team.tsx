@@ -14,7 +14,7 @@ const team = [
 
 export default function Team() {
   return (
-    <section id="team" className="py-20">
+    <section id="team" className="py-20 bg-muted/20">
       <div className="container">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
           <h2 className="text-3xl font-bold mb-4 text-center">Meet the Team</h2>
