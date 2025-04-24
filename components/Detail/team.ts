@@ -4,12 +4,14 @@ export const team = [
     designation: 'President ',
     github: 'https://github.com/Div2003V',
     linkedin: 'https://www.linkedin.com/in/divyansh-verma-5aba34251/',
-    }, {
+    },
+    /* {
     name: 'Shivam',
     designation: 'Technical head',
     github: 'https://github.com/shivamyeshu',
     linkedin: 'https://linkedin.com/in/shivam-yeshu',
-    },{
+    }, */
+    {
       name: 'Anshul Sirohiya',
       designation: 'Co-Creative head',
       github: 'https://github.com/AnshulSirohiya301',
